@@ -108,7 +108,7 @@ function StarRating({ rating }: { rating: Review["rating"] }) {
           key={index}
           className={clsx(
             "h-5 w-5",
-            rating > index ? "fill-amber-400" : "fill-gray-300"
+            rating > index ? "fill-crimson-400" : "fill-gray-300",
           )}
         />
       ))}
@@ -142,7 +142,7 @@ function Review({
     <figure
       className={clsx(
         "animate-fade-in rounded-3xl bg-white p-6 opacity-0 shadow-md shadow-gray-900/5",
-        className
+        className,
       )}
       style={{ animationDelay }}
       {...props}
@@ -243,7 +243,7 @@ function ReviewGrid() {
               clsx(
                 reviewIndex >= column1.length + column3[0].length &&
                   "md:hidden",
-                reviewIndex >= column1.length && "lg:hidden"
+                reviewIndex >= column1.length && "lg:hidden",
               )
             }
             msPerPixel={10}

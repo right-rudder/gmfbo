@@ -35,13 +35,6 @@ const heroData = {
   ],
 };
 
-const ourClients = {
-  heading:
-    "In the last 5 years leaders at these flight schools have turned to RRM",
-  description:
-    "Our flight schools are the best in the business. They are the top flight schools in the country and they trust us to help them grow and scale their businesses. We are proud to be a part of their success.",
-};
-
 const marketingSystem = {
   imagePath: "/src/assets/william-topa-7_4bU5tHRLQ-unsplash.jpg",
   imageAlt: "Flight school marketing system in action",
@@ -110,42 +103,6 @@ const marketingSystem = {
   },
 };
 
-const membersOf = {
-  heading: "Proud members of",
-  organizations: [
-    {
-      name: "FSANA",
-      imagePath: "/src/assets/FSANA-logo-crop.webp",
-      imageAlt: "FSANA logo",
-      link: "https://www.fsana.com/partners.php",
-    },
-    {
-      name: "NBAA",
-      imagePath: "/src/assets/NBAA-logo.webp",
-      imageAlt: "NBAA logo",
-      link: "https://nbaa.org/",
-    },
-    {
-      name: "AMA",
-      imagePath: "/src/assets/AMA-logo.webp",
-      imageAlt: "AMA logo",
-      link: "https://www.ama.org/",
-    },
-    {
-      name: "Us Chamber of Commerce",
-      imagePath: "/src/assets/uschamber-logo.webp",
-      imageAlt: "Us Chamber of Commerce logo",
-      link: "https://www.uschamber.com/",
-    },
-    {
-      name: "NAFI",
-      imagePath: "/src/assets/NAFI-corporate-logo.webp",
-      imageAlt: "NAFI logo",
-      link: "https://www.nafinet.org/sponsors",
-    },
-  ],
-};
-
 const features = {
   subtitle: "Complete Marketing Solutions",
   title: "Proven strategies that transform flight schools",
@@ -208,76 +165,14 @@ const features = {
     },
   ],
 };
-
-const cases = {
-  upperHeading: "Success Stories",
-  heading: "Flight schools thriving with RRM",
-  cards: [
-    {
-      logo: "/src/assets/sun-city-black-text-logo.webp",
-      client: "Sun City Aviation",
-      title: "Remarkable growth with targeted marketing strategies",
-      image: "http://img.youtube.com/vi/VUeDTE-Mzuw/maxresdefault.jpg",
-      description:
-        "With RRM's complete marketing system, Simplifly Flight School experienced a remarkable 100% increase in student enrollments over a 12-month period. RRM's tailored approach, which included SEO optimization, engaging video content, and strategic ad placements, enabled Simplifly to effectively reach and convert prospective student pilots in their local market.",
-      slug: "sun-city",
-    },
-    {
-      logo: "/src/assets/uft-logo-new-black.webp",
-      client: "Universal Flight Training",
-      title: "Expertise that drives student enrollment growth",
-      image: "http://img.youtube.com/vi/OywZjggj1RE/maxresdefault.jpg",
-      description:
-        "With RRM's complete marketing system, Simplifly Flight School experienced a remarkable 100% increase in student enrollments over a 12-month period. RRM's tailored approach, which included SEO optimization, engaging video content, and strategic ad placements, enabled Simplifly to effectively reach and convert prospective student pilots in their local market.",
-      slug: "universal-flight-training",
-    },
-    {
-      logo: "/src/assets/SFA-logo-black-text.webp",
-      client: "Summit Flight Academy",
-      title: "Local market domination and enrollment surge",
-      image: "http://img.youtube.com/vi/qWRb84en0vs/hqdefault.jpg",
-      description:
-        "With RRM's complete marketing system, Simplifly Flight School experienced a remarkable 100% increase in student enrollments over a 12-month period. RRM's tailored approach, which included SEO optimization, engaging video content, and strategic ad placements, enabled Simplifly to effectively reach and convert prospective student pilots in their local market.",
-      slug: "summit-flight-academy",
-    },
-    {
-      logo: "/src/assets/simplifly_2.webp",
-      client: "Simplifly Flight School",
-      title: "Enrollment doubles with our comprehensive marketing system",
-      image: "http://img.youtube.com/vi/qzT8Q49ExUw/maxresdefault.jpg",
-      description:
-        "With RRM's complete marketing system, Simplifly Flight School experienced a remarkable 100% increase in student enrollments over a 12-month period. RRM's tailored approach, which included SEO optimization, engaging video content, and strategic ad placements, enabled Simplifly to effectively reach and convert prospective student pilots in their local market.",
-      slug: "simplifly",
-    },
-    {
-      logo: "/src/assets/blue-skies-logo-black-600-nobg.saIaC-kR_Z3AR6L.avif",
-      client: "Blue Skies Above",
-      title: "Market positioning that drives growth",
-      image: "http://img.youtube.com/vi/SD8TsqJSX00/maxresdefault.jpg",
-      description:
-        "With RRM's complete marketing system, Simplifly Flight School experienced a remarkable 100% increase in student enrollments over a 12-month period. RRM's tailored approach, which included SEO optimization, engaging video content, and strategic ad placements, enabled Simplifly to effectively reach and convert prospective student pilots in their local market.",
-      slug: "blue-skies-above",
-    },
-    {
-      logo: "/src/assets/ideal-aviation-logo.webp",
-      client: "Ideal Aviation",
-      title: "Competitive edge through strategic marketing",
-      image: "http://img.youtube.com/vi/c1Pe9XJdsbo/hqdefault.jpg",
-      description:
-        "With RRM's complete marketing system, Simplifly Flight School experienced a remarkable 100% increase in student enrollments over a 12-month period. RRM's tailored approach, which included SEO optimization, engaging video content, and strategic ad placements, enabled Simplifly to effectively reach and convert prospective student pilots in their local market.",
-      slug: "ideal-aviation",
-    },
-  ],
-};
 ---
 
 <BaseLayout>
   <HeroScreen data={heroData} />
   <PartnerWithUs />
-  <LogosCloud data={ourClients} />
   <section
     id="pre-features"
-    class="flex flex-col items-center bg-mariner-800 py-16 lg:py-24"
+    class="flex flex-col items-center bg-blackpearl-950 py-16 lg:py-24"
   >
     <div
       class="container max-w-5xl mx-auto px-4 flex flex-col items-center space-y-6 text-white text-center"
@@ -294,9 +189,6 @@ const cases = {
   </section>
   <Features data={features} />
   <Content data={marketingSystem} />
-  <CaseStudiesSwiper content={cases} />
-  <MembersOf data={membersOf} />
-  <Reviews client:idle />
   <FromTheBlog />
 </BaseLayout>
 <script src="../scripts/creativeSlider.js"></script>

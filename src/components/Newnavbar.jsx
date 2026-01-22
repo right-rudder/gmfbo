@@ -106,7 +106,7 @@ export default function NewNavbar() {
 
             <PopoverPanel
               transition
-              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-mariner-950 outline-1 -outline-offset-1 outline-white/10 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-blackpearl-950 outline-1 -outline-offset-1 outline-white/10 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
             >
               <div className="p-4">
                 {services.map((item) => (
@@ -128,7 +128,7 @@ export default function NewNavbar() {
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-                      <p className="mt-1 text-mariner-200">
+                      <p className="mt-1 text-blackpearl-200">
                         {item.description}
                       </p>
                     </div>

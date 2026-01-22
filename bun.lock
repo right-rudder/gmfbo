@@ -9,9 +9,6 @@
         "@astrojs/sitemap": "^3.6.0",
         "@fontsource-variable/albert-sans": "^5.2.8",
         "@fontsource-variable/inter": "^5.2.8",
-        "@fontsource-variable/roboto": "^5.2.9",
-        "@fontsource-variable/rubik": "^5.2.8",
-        "@fontsource-variable/ubuntu-sans": "^5.2.10",
         "@headlessui/react": "^2.2.9",
         "@heroicons/react": "^2.2.0",
         "@tailwindcss/vite": "^4.1.17",
@@ -192,12 +189,6 @@
     "@fontsource-variable/albert-sans": ["@fontsource-variable/albert-sans@5.2.8", "", {}, "sha512-hDtxW/K8gj8y+42BvH50UUIgpY7oriWXi+79Aam0MN+BIwk2CyN3kI/NP37e39PvC1625UFHEyBi48IcMy3DiA=="],
 
     "@fontsource-variable/inter": ["@fontsource-variable/inter@5.2.8", "", {}, "sha512-kOfP2D+ykbcX/P3IFnokOhVRNoTozo5/JxhAIVYLpea/UBmCQ/YWPBfWIDuBImXX/15KH+eKh4xpEUyS2sQQGQ=="],
-
-    "@fontsource-variable/roboto": ["@fontsource-variable/roboto@5.2.9", "", {}, "sha512-uH58g1An9Z4Efiviu0YuN8lvYf22TXidCx2++ZPpEegviaPaYQUwNbQZyr5lO2ae3pM07AolUabngLrlYtuzfA=="],
-
-    "@fontsource-variable/rubik": ["@fontsource-variable/rubik@5.2.8", "", {}, "sha512-vGDExLzB4a2Fj9mca5LqNoA2ZKcU9o+x5FEBLte/nxYkCB9hOQwZS6ZlItUv+Ssn7YMzKauGuI/Po+YueFuZbg=="],
-
-    "@fontsource-variable/ubuntu-sans": ["@fontsource-variable/ubuntu-sans@5.2.10", "", {}, "sha512-oDLimqeDpeHynO+r+UqODkoeniVJZqHsQ863H3pu8anqDOa6bCknOWEuipOzOF31k5ongz/OGN55H+rb/+rJkQ=="],
 
     "@headlessui/react": ["@headlessui/react@2.2.9", "", { "dependencies": { "@floating-ui/react": "^0.26.16", "@react-aria/focus": "^3.20.2", "@react-aria/interactions": "^3.25.0", "@tanstack/react-virtual": "^3.13.9", "use-sync-external-store": "^1.5.0" }, "peerDependencies": { "react": "^18 || ^19 || ^19.0.0-rc", "react-dom": "^18 || ^19 || ^19.0.0-rc" } }, "sha512-Mb+Un58gwBn0/yWZfyrCh0TJyurtT+dETj7YHleylHk5od3dv2XqETPGWMyQ5/7sYN7oWdyM1u9MvC0OC8UmzQ=="],
 

@@ -14,22 +14,11 @@ import {
 } from "@headlessui/react";
 import {
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
-  CodeBracketSquareIcon,
-  MagnifyingGlassCircleIcon,
-  PlayCircleIcon as PlayCircleIconOutline,
-  CurrencyDollarIcon,
-  UserCircleIcon,
-  BuildingStorefrontIcon,
   BookOpenIcon,
   BookmarkSquareIcon,
   AcademicCapIcon,
   MicrophoneIcon,
-  CubeTransparentIcon,
   UserPlusIcon,
   BriefcaseIcon,
   PresentationChartBarIcon,
@@ -108,7 +97,7 @@ export default function NavbarFlyout() {
     <header className="absolute top-0 left-0 right-0 isolate z-50">
       <nav
         aria-label="Global"
-        className="mx-auto font-inter flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto font-sans flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -130,175 +119,36 @@ export default function NavbarFlyout() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="hidden lg:flex justify-end w-1/2 lg:gap-x-12">
           <a
             href="/marketing-system"
             className="flex flex-col gap-0 text-center group"
           >
-            <span className="text-xs/6 p-0 m-0 font-light text-gray-300 group-hover:text-amber-300">
+            <span className="text-xs/6 p-0 m-0 font-light text-crimson-100 group-hover:text-crimson-500">
               Our Marketing
             </span>
             <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
               System
             </span>
           </a>
-          <Popover>
-            <PopoverButton className="flex flex-col text-center gap-0 items-center group hover:cursor-pointer">
-              <span className="text-xs/6 p-0 m-0 font-light text-gray-300 group-hover:text-amber-300">
-                Webinars, Magazine, Podcast
-              </span>
-              <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
-                Resources
-              </span>
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="size-5 flex-none text-gray-500"
-              />
-            </PopoverButton>
-
-            <PopoverPanel
-              transition
-              className="absolute inset-x-0 top-24 bg-slate-800 transition data-closed:-translate-y-2 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
-            >
-              {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 top-1/2 bg-slate-100 ring-1 ring-white/15"
-              />
-              <div className="relative bg-slate-400">
-                <div className="mx-auto flex flex-wrap justify-center max-w-7xl gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
-                  {resources.map((item) => (
-                    <div
-                      key={item.name}
-                      className="group w-1/5 relative rounded-lg p-6 text-sm/5 hover:bg-slate-900/5"
-                    >
-                      <div className="flex size-11 items-center justify-center rounded-lg bg-slate-400/50 group-hover:bg-slate-700">
-                        <item.icon
-                          aria-hidden="true"
-                          className="size-6 text-slate-600 group-hover:text-white"
-                        />
-                      </div>
-                      <a
-                        href={item.href}
-                        target={
-                          item.href.startsWith("http") ? "_blank" : undefined
-                        }
-                        className="mt-6 block font-semibold text-slate-900"
-                      >
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </a>
-                      <p className="mt-1 text-slate-500 group-hover:text-slate-700">
-                        {item.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-                <div className="bg-slate-800/50">
-                  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="flex justify-center divide-x divide-white/5 border-x border-white/10">
-                      {callsToActionResources.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className="flex items-center w-1/3 justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-slate-100 hover:bg-slate-800"
-                        >
-                          <item.icon
-                            aria-hidden="true"
-                            className="size-5 flex-none text-slate-700"
-                          />
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </PopoverPanel>
-          </Popover>
 
           <a href="/blog" className="flex flex-col gap-0 text-center group">
-            <span className="text-xs/6 p-0 m-0 font-light text-gray-300 group-hover:text-amber-300">
+            <span className="text-xs/6 p-0 m-0 font-light text-crimson-100 group-hover:text-crimson-500">
               News & Tips
             </span>
             <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
               Blog
             </span>
           </a>
-          <Popover>
-            <PopoverButton className="flex flex-col text-center gap-0 items-center hover:cursor-pointer group">
-              <span className="text-xs/6 p-0 m-0 font-light text-gray-300 group-hover:text-amber-300">
-                Proven Results
-              </span>
-              <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
-                About
-              </span>
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="size-5 flex-none text-gray-500"
-              />
-            </PopoverButton>
 
-            <PopoverPanel
-              transition
-              className="absolute inset-x-0 top-24 bg-slate-800 transition data-closed:-translate-y-2 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
-            >
-              {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 top-1/2 bg-slate-100 ring-1 ring-white/15"
-              />
-              <div className="relative bg-mariner-200">
-                <div className="mx-auto flex flex-wrap justify-center max-w-7xl gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
-                  {aboutUs.map((item) => (
-                    <div
-                      key={item.name}
-                      className="group w-1/5 relative rounded-lg p-6 text-sm/5 hover:bg-mariner-900/5"
-                    >
-                      <div className="flex size-11 items-center justify-center rounded-lg bg-mariner-200/50 group-hover:bg-mariner-700">
-                        <item.icon
-                          aria-hidden="true"
-                          className="size-6 text-mariner-600 group-hover:text-white"
-                        />
-                      </div>
-                      <a
-                        href={item.href}
-                        target={
-                          item.href.startsWith("http") ? "_blank" : undefined
-                        }
-                        className="mt-6 block font-semibold text-gray-700"
-                      >
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </a>
-                      <p className="mt-1 text-gray-400 group-hover:text-gray-700">
-                        {item.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-                <div className="bg-mariner-800/50">
-                  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="flex justify-center divide-x divide-white/5 border-x border-white/10">
-                      {callsToActionAboutUs.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className="flex items-center w-1/3 justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-mariner-100 hover:bg-mariner-800"
-                        >
-                          <item.icon
-                            aria-hidden="true"
-                            className="size-5 flex-none text-mariner-700"
-                          />
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </PopoverPanel>
-          </Popover>
+          <a href="/about" className="flex flex-col gap-0 text-center group">
+            <span className="text-xs/6 p-0 m-0 font-light text-crimson-100 group-hover:text-crimson-500">
+              Lear More
+            </span>
+            <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
+              About Us
+            </span>
+          </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="/contact" className="btn-primary">
