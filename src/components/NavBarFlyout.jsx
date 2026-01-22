@@ -104,8 +104,8 @@ export default function NavbarFlyout() {
             <span className="sr-only">Right Rudder Marketing</span>
             <img
               alt="Right Rudder Marketing Logo"
-              src="/GrowMyFBO-white.png"
-              className="h-12 w-auto"
+              src="/GMFBO-full-white.png"
+              className="h-16 w-auto"
             />
           </a>
         </div>

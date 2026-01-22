@@ -67,19 +67,20 @@ export const LOCATION_KEYWORDS = {
 
 export const OG_IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
 
-export const FAVICON = "GrowMyFBO Branding.png";
+export const FAVICON = "GMFBO-favicon.png";
 
-export const LOGO_ASSETS = "/src/assets/GrowMyFBO Branding.png";
-export const LOGO_ASSETS_2 = "/src/assets/RRM-hor-transparent.png";
-export const LOGO_ASSETS_3 = "/src/assets/RRM-ver-textBlack-trans-500.webp";
-export const LOGO_ASSETS_4 = "/src/assets/GrowMyFBO-white.png";
+export const LOGO_ASSETS = "/src/assets/GMFBO-full-colors.png";
+export const LOGO_ASSETS_2 = "/src/assets/GMFBO-full-white.png";
+export const LOGO_ASSETS_3 = "/src/assets/GMFBO-simple-black.png";
+export const LOGO_ASSETS_4 = "/src/assets/GMFBO-simple-red.png";
+export const LOGO_ASSETS_5 = "/src/assets/GMFBO-simple-white.png";
 
 // CHANGE client business info
 export const COMPANY_NAME = "Right Rudder Marketing";
 export const COMPANY_NAME_CAPS = "RIGHT RUDDER MARKETING";
 export const COMPANY_NICKNAME = "RRM";
-export const LOGO_PRIMARY = "/rrm-logo.png";
-export const LOGO_SECONDARY = "/rrm-logo.png";
+export const LOGO_PRIMARY = "/GMFBO-full-colors.png";
+export const LOGO_SECONDARY = "/GMFBO-full-white.png";
 export const PHONE_NUMBER = "(919) 526-4287";
 export const PHONE_NUMBER_HEADER = "(919) 526-4287";
 export const EMAIL_ADDRESS = "contact@rightruddermarketing.com";
