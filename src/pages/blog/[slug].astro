@@ -1,0 +1,128 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (async () => {
+  const blogPosts = await getCollection("blog");
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Format date helper
+const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+};
+
+// Get related posts (same tags)
+const allPosts = await getCollection("blog");
+const relatedPosts = post.data.tags
+  ? allPosts
+      .filter(
+        (p) =>
+          p.slug !== post.slug &&
+          p.data.tags?.some((tag) => post.data.tags?.includes(tag)),
+      )
+      .slice(0, 3)
+  : [];
+---
+
+<BlogLayout
+  siteTitle={`${post.data.title} | Right Rudder Marketing Aviation Academy Blog`}
+  siteDescription={post.data.description}
+  siteImage={post.data.heroImage}
+  author={post.data.author}
+>
+<section
+  class="hero-section relative overflow-hidden flex justify-center items-center lg:items-center text-white min-h-screen md:min-h-[95vh] lg:min-h-[90vh] xl:min-h-[85vh] 2xl:min-h-[80vh]"
+  aria-label="Hero section"
+>
+  <!-- Background overlay for better text readability -->
+  <div
+    class="absolute inset-0 bg-linear-to-b from-black/70 to-black/50 z-0 backdrop-blur-xs"
+    aria-hidden="true"
+  >
+  </div>
+  {
+        post.data.heroImage && (
+          <img
+            src={post.data.heroImage}
+            alt={post.data.title}
+            class="absolute inset-0 h-full w-full object-cover object-center brightness-90 animate-slow-zoom -z-20"
+          />
+        )
+      }
+
+  <!-- Content Container -->
+  <div class="max-w-7xl w-full px-5 md:px-8 lg:px-12 mx-auto z-10">
+    <div
+      class="flex flex-col justify-center items-center lg:items-start max-w-6xl"
+    >
+      <!-- Main Content -->
+      <div
+        class="flex flex-col items-center lg:items-start gap-y-6 text-center lg:text-left"
+      >
+        <h1
+          class="font-title flex flex-col text-muted-50 text-4xl/tight  md:text-5xl/tight lg:text-6xl/16 font-bold drop-shadow-2xl"
+        >
+          {
+            post.data.category && (
+              <span class="text-lg/7 mb-3 sm:text-xl/8 md:text-xl/6 w-fit font-medium text-muted-900 bg-gray-100/90 px-5 py-2 rounded-full">
+                {post.data.category}
+              </span>
+              <br />
+            )
+          }
+          {post.data.title}
+          {
+            post.data.description && (
+              <p
+                class="text-lg/7 mt-4 sm:text-xl/8 md:text-xl/6 font-light text-gray-100 max-w-4xl"
+                set:html={post.data.description}
+              />
+            )
+          }
+        </h1>
+        {
+          post.data.tags && post.data.tags.length > 0 && (
+            <div class="flex flex-wrap gap-2">
+              {post.data.tags.slice(0, 3).map((tag) => (
+                <span class="bg-white/80 text-gray-950 text-sm px-4 py-2 rounded-full capitalize">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )
+        }
+        <div class="flex items-center gap-4 text-gray-100 mb-6">
+          <time datetime={post.data.pubDate.toISOString()}>
+            {formatDate(post.data.pubDate)}
+          </time>
+          <span>•</span>
+          <span>By {post.data.author}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <article class="py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      
+
+      <div class="prose prose-lg max-w-none mb-12">
+        <Content />
+      </div>
+    </div>
+  </article>
+</div>
+
+</BaseLayout>
