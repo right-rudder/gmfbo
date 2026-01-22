@@ -67,9 +67,7 @@ export const LOCATION_KEYWORDS = {
 
 export const OG_IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
 
-export const FAVICON = "/favicon.png";
-
-export const LOGO = "/Mil2ATP_Logo_2_340x.png";
+export const FAVICON = "GrowMyFBO Branding.png";
 
 export const LOGO_ASSETS = "/src/assets/GrowMyFBO Branding.png";
 export const LOGO_ASSETS_2 = "/src/assets/RRM-hor-transparent.png";
