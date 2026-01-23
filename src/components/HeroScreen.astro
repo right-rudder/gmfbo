@@ -86,7 +86,7 @@ const { data } = Astro.props;
         class="flex flex-col items-center lg:items-start gap-y-6 text-center lg:text-left"
       >
         <h1
-          class="font-title flex flex-col text-muted-50 text-4xl/tight sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/16 font-bold drop-shadow-2xl"
+          class="font-title flex flex-col text-muted-50 text-3xl/tight sm:text-5xl/tight md:text-6xl/tight lg:text-7xl/16 font-bold drop-shadow-2xl"
         >
           {
             data.uppertitle && (
@@ -100,7 +100,7 @@ const { data } = Astro.props;
           {
             data.subTitle && (
               <p
-                class="text-lg/7 mt-4 sm:text-xl/8 md:text-xl/6 font-light text-muted-50 max-w-2xl"
+                class="text-base/6 mt-4 sm:text-lg/7 md:text-xl/6 font-light text-muted-50 max-w-2xl"
                 set:html={data.subTitle}
               />
             )
