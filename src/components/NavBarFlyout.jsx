@@ -30,7 +30,6 @@ import {
   PlayCircleIcon,
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
-import { LOGO_ASSETS, LOGO_ASSETS_2 } from "@/data/consts";
 
 const aboutUs = [
   {
@@ -105,7 +104,7 @@ export default function NavbarFlyout() {
             <span className="sr-only">Right Rudder Marketing</span>
             <img
               alt="Grow My FBO Logo"
-              src={LOGO_ASSETS_2}
+              src="/GMFBO-full-white.png"
               className="h-16 w-auto hover:scale-105 hover:rotate-z-1 transition-all duration-300"
             />
           </a>

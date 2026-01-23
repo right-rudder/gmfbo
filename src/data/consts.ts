@@ -69,11 +69,11 @@ export const OG_IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
 
 export const FAVICON = "/GMFBO-favicon.png";
 
-export const LOGO_ASSETS = "/src/assets/GMFBO-full-colors.png";
-export const LOGO_ASSETS_2 = "/src/assets/GMFBO-full-white.png";
-export const LOGO_ASSETS_3 = "/src/assets/GMFBO-simple-black.png";
-export const LOGO_ASSETS_4 = "/src/assets/GMFBO-simple-red.png";
-export const LOGO_ASSETS_5 = "/src/assets/GMFBO-simple-white.png";
+export const LOGO_ASSETS = "/GMFBO-full-colors.png";
+export const LOGO_ASSETS_2 = "/GMFBO-full-white.png";
+export const LOGO_ASSETS_3 = "/GMFBO-simple-black.png";
+export const LOGO_ASSETS_4 = "/GMFBO-simple-red.png";
+export const LOGO_ASSETS_5 = "/GMFBO-simple-white.png";
 
 // CHANGE client business info
 export const COMPANY_NAME = "Right Rudder Marketing";
