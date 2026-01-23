@@ -67,7 +67,7 @@ export const LOCATION_KEYWORDS = {
 
 export const OG_IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
 
-export const FAVICON = "GMFBO-favicon.png";
+export const FAVICON = "/GMFBO-favicon.png";
 
 export const LOGO_ASSETS = "/src/assets/GMFBO-full-colors.png";
 export const LOGO_ASSETS_2 = "/src/assets/GMFBO-full-white.png";
@@ -81,7 +81,7 @@ export const COMPANY_NAME_CAPS = "RIGHT RUDDER MARKETING";
 export const COMPANY_NICKNAME = "RRM";
 export const LOGO_PRIMARY = "/GMFBO-full-colors.png";
 export const LOGO_SECONDARY = "/GMFBO-full-white.png";
-export const PHONE_NUMBER = "(919) 526-4287";
+export const PHONE_NUMBER = "469-224-9672";
 export const PHONE_NUMBER_HEADER = "(919) 526-4287";
 export const EMAIL_ADDRESS = "contact@rightruddermarketing.com";
 export const FACEBOOK_URL = "https://www.facebook.com/mil2ATP";

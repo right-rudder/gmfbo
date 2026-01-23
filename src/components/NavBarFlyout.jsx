@@ -30,6 +30,7 @@ import {
   PlayCircleIcon,
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
+import { LOGO_ASSETS, LOGO_ASSETS_2 } from "@/data/consts";
 
 const aboutUs = [
   {
@@ -103,9 +104,9 @@ export default function NavbarFlyout() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Right Rudder Marketing</span>
             <img
-              alt="Right Rudder Marketing Logo"
-              src="/GMFBO-full-white.png"
-              className="h-16 w-auto"
+              alt="Grow My FBO Logo"
+              src={LOGO_ASSETS_2}
+              className="h-16 w-auto hover:scale-105 hover:rotate-z-1 transition-all duration-300"
             />
           </a>
         </div>
@@ -121,32 +122,38 @@ export default function NavbarFlyout() {
         </div>
         <PopoverGroup className="hidden lg:flex justify-end w-1/2 lg:gap-x-12">
           <a
-            href="/marketing-system"
-            className="flex flex-col gap-0 text-center group"
+            href="/#marketing-system"
+            className="flex flex-col gap-0 text-center group hover:scale-105 transition-all duration-200"
           >
-            <span className="text-xs/6 p-0 m-0 font-light text-crimson-100 group-hover:text-crimson-500">
+            <span className="text-xs/6 p-0 m-0 font-light text-white group-hover:text-crimson-100">
               Our Marketing
             </span>
-            <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
+            <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-50">
               System
             </span>
           </a>
 
-          <a href="/blog" className="flex flex-col gap-0 text-center group">
-            <span className="text-xs/6 p-0 m-0 font-light text-crimson-100 group-hover:text-crimson-500">
+          <a
+            href="/blog"
+            className="flex flex-col gap-0 text-center group hover:scale-105 transition-all duration-200"
+          >
+            <span className="text-xs/6 p-0 m-0 font-light text-white group-hover:text-crimson-100">
               News & Tips
             </span>
-            <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
+            <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-50">
               Blog
             </span>
           </a>
 
-          <a href="/about" className="flex flex-col gap-0 text-center group">
-            <span className="text-xs/6 p-0 m-0 font-light text-crimson-100 group-hover:text-crimson-500">
-              Lear More
+          <a
+            href="/#meet-the-team"
+            className="flex flex-col gap-0 text-center group hover:scale-105 transition-all duration-200"
+          >
+            <span className="text-xs/6 p-0 m-0 font-light text-white group-hover:text-crimson-100">
+              Meet the
             </span>
-            <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-200">
-              About Us
+            <span className="font-extrabold -mt-2 p-0 text-2xl uppercase text-gray-50">
+              Team
             </span>
           </a>
         </PopoverGroup>

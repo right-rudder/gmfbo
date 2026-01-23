@@ -37,11 +37,12 @@ const { data } = Astro.props;
           <p class="text-base font-light lg:text-lg">
             {data.description}
           </p>
+          <h4 class="mt-6 text-lg font-semibold">Our Core Services:</h4>
           <ul class="space-y-2 font-light list-disc list-inside">
             {
               data.list.map((item) => (
                 <li>
-                  <a href={item.href} class="hover:underline">
+                  <a href={item.href} class="text-sm hover:underline">
                     {item.text}
                   </a>
                 </li>
