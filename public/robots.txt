@@ -1,0 +1,65 @@
+# Robots.txt for Grow My FBO
+
+# Default crawlers
+User-agent: *
+Allow: /
+Disallow: /contact-confirmation
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+
+# Allow important crawlers full access
+User-agent: Googlebot
+Allow: /
+Disallow: /contact-confirmation
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /contact-confirmation
+
+User-agent: Slurp
+Allow: /
+Disallow: /contact-confirmation
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Google AdsBot
+User-agent: AdsBot-Google
+Allow: /
+Disallow: /contact-confirmation
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+Disallow: /contact-confirmation
+
+# Block bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap reference
+Sitemap: https://growmyfbo.com/sitemap-index.xml
+
+# Crawl delay for general bots
+Crawl-delay: 1
