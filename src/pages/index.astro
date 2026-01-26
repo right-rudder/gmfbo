@@ -11,6 +11,7 @@ import CaseStudiesSwiper from "../components/CaseStudiesSwiper.astro";
 import FromTheBlog from "../components/FromTheBlog.astro";
 import MeetTheTeam from "@/components/MeetTheTeam.astro";
 import { PHONE_NUMBER } from "../data/consts.ts";
+import ContactUs from "@/components/ContactUs.astro";
 
 const heroData = {
   image: {
@@ -27,7 +28,7 @@ const heroData = {
     "A complete marketing system built specifically for Fixed-Base Operators to increase visibility, attract more customers, and grow fuel, services, and training revenue.",
   cta: [
     {
-      url: "/marketing-system",
+      url: "/#marketing-system",
       text: "Our FBO Marketing System",
     },
     {
@@ -65,14 +66,14 @@ const marketingSystem = {
         icon: "M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z",
         title: "Targeted Advertising Campaigns",
         descriptions: [
-          "Google Ads, Facebook, Instagram, and YouTube campaigns laser-focused on qualified student pilots in your market—not wasted impressions.",
+          "Google Ads, Facebook, Instagram, and YouTube campaigns laser-focused on qualified pilots in your market—not wasted impressions.",
         ],
       },
       {
         icon: "M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z",
         title: "Video Marketing & Content",
         descriptions: [
-          "High-quality video content showcasing your school, student testimonials, and training environment—the #1 trust-builder for prospective pilots.",
+          "High-quality video content showcasing your FBO, customer testimonials, and facilities—the #1 trust-builder for prospective pilots.",
         ],
       },
       {
@@ -95,8 +96,8 @@ const marketingSystem = {
   finalSection: {
     heading: "Ready to Transform Your Enrollment?",
     descriptions: [
-      "The Flight School Marketing System isn't just marketing services—it's a complete growth engine designed to take your flight school from struggling with inconsistent leads to confidently scaling with a steady pipeline of qualified student pilots.",
-      "If you're ready to stop losing students to competitors with better marketing and start dominating your local market, schedule a free strategy call. We'll show you exactly how the system works and how we can customize it for your flight school's specific goals and market.",
+      "The FBO Marketing System isn't just marketing services—it's a complete growth engine designed to take your FBO from struggling with inconsistent leads to confidently scaling with a steady pipeline of qualified pilots.",
+      "If you're ready to stop losing students to competitors with better marketing and start dominating your local market, schedule a free strategy call. We'll show you exactly how the system works and how we can customize it for your FBO's specific goals and market.",
     ],
   },
   finalCta: {
@@ -113,45 +114,45 @@ const features = {
   list: [
     {
       text: "FBO Website Design & Optimization",
-      href: "#",
+      href: "/#end-to-end-solution",
     },
     {
       text: "Aviation-Specific Search Engine Optimization (SEO)",
-      href: "#",
+      href: "/#end-to-end-solution",
     },
     {
       text: "Targeted Paid Advertising Campaigns",
-      href: "#",
+      href: "/#end-to-end-solution",
     },
     {
       text: "Customer Relationship Management Software",
-      href: "#",
+      href: "/#end-to-end-solution",
     },
     {
       text: "Reputation Management",
-      href: "#",
+      href: "/#end-to-end-solution",
     },
   ],
   button: {
     text: "Explore Our System",
-    href: "/marketing-system",
+    href: "/#end-to-end-solution",
   },
   boxes: [
     {
       label: "Foundation",
-      title: "Your Flight School Website",
+      title: "Your FBO Website",
       badge: { text: "Step 1", featured: false },
       description:
-        "A modern, mobile-responsive website built specifically for flight schools. Fast-loading pages with HTML5, CSS3, and optimized JavaScript ensure seamless user experience across all devices. Clean design that showcases your programs, aircraft, and facilities while making it easy for prospects to take the next step. Built on reliable hosting infrastructure for maximum uptime and security.",
-      href: "#",
+        "A modern, mobile-responsive website built specifically for FBOs. Fast-loading pages with HTML5, CSS3, and optimized JavaScript ensure seamless user experience across all devices. Clean design that showcases your programs, aircraft, and facilities while making it easy for prospects to take the next step. Built on reliable hosting infrastructure for maximum uptime and security.",
+      href: "/#end-to-end-solution",
     },
     {
       label: "Visibility",
       title: "Rank High On Organic Search",
       badge: { text: "Step 2", featured: false },
       description:
-        "Dominate search results on Google, Bing, Yahoo, and other search engines when prospects search for flight training. Strategic SEO optimization ensures your school appears at the top for high-intent keywords like 'flight school near me' and 'pilot training.' Technical SEO, local citations, content optimization, and ongoing monitoring keep you ahead of the competition and generate consistent organic traffic without ad spend.",
-      href: "#",
+        "Dominate search results on Google, Bing, Yahoo, and other search engines when prospects search for flight training. Strategic SEO optimization ensures your school appears at the top for high-intent keywords like 'FBO near me' and 'pilot training.' Technical SEO, local citations, content optimization, and ongoing monitoring keep you ahead of the competition and generate consistent organic traffic without ad spend.",
+      href: "/#end-to-end-solution",
     },
     {
       label: "Engagement",
@@ -159,7 +160,7 @@ const features = {
       badge: { text: "Step 4", featured: true },
       description:
         "Transform website visitors into enrolled students through strategic conversion funnels and multi-channel communication. Optimized contact forms, automated email sequences, WhatsApp and Facebook Messenger integration, and clear calls-to-action guide prospects from initial inquiry to discovery flight booking. Nurture leads through every stage of their decision journey until they're ready to start training.",
-      href: "#",
+      href: "/#end-to-end-solution",
     },
     {
       label: "Growth",
@@ -167,7 +168,7 @@ const features = {
       badge: { text: "Step 3", featured: false },
       description:
         "Accelerate growth with targeted advertising campaigns across Google Ads, Facebook, Instagram, YouTube, and Google Maps. Reach qualified prospects actively searching for flight training with laser-focused ad targeting, compelling ad creative, and optimized landing pages. Track every dollar spent with conversion tracking and transparent ROI reporting. Scale what works, pause what doesn't, and maintain predictable cost-per-lead.",
-      href: "#",
+      href: "/#end-to-end-solution",
     },
   ],
 };
@@ -194,8 +195,9 @@ const features = {
     </div>
   </section>
   <Features data={features} />
-  <MeetTheTeam />
   <Content data={marketingSystem} />
+  <MeetTheTeam />
   <FromTheBlog />
+  <ContactUs />
 </BaseLayout>
 <script src="../scripts/creativeSlider.js"></script>
