@@ -1,7 +1,7 @@
 ---
 name: Tim Jedrek
 slug: tim-jedrek
-title: Co-Founder & COO
+title: Co-Founder & Chief Operating Officer
 social:
   facebook: "https://www.facebook.com/flightschoolmarketing"
   instagram: "https://www.instagram.com/rightruddermarketing/"
@@ -10,7 +10,7 @@ social:
   github: "https://github.com/timjedrek"
   website: "https://timjedrek.com/"
   youtube: "https://www.youtube.com/@rightruddermarketing"
-image: /src/assets/RRM-Crew-Tim-Jedrek.webp
+image: /RRM-Crew-Tim-Jedrek.webp
 status: active
 seniority: 2
 ---

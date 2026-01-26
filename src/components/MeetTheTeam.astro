@@ -25,10 +25,8 @@ const sortedTeam = fullTeam.sort(
       {
         sortedTeam.map((member) => (
           <li class="flex flex-col lg:justify-start lg:items-center group gap-6 w-full lg:w-[45%] lg:h-108 lg:max-w-52 lg:hover:max-w-[50%] overflow-hidden rounded-tl-4xl rounded-br-4xl hover:rotate-z-1 hover:shadow-2xl xl:flex-row group hover:ring-1 ring-gray-200 hover:scale-105 transition-all duration-200 ease-in-out">
-            <ImageComp
-              src={
-                member.data.image || "/src/assets/crew-placeholder-male.webp"
-              }
+            <img
+              src={member.data.image || "/crew-placeholder-male.webp"}
               alt={member.data.name}
               class="aspect-square w-full lg:h-full lg:aspect-4/5 lg:w-52 flex-none object-cover outline-1 -outline-offset-1 outline-black/5"
             />
@@ -41,6 +39,10 @@ const sortedTeam = fullTeam.sort(
               </p>
               <p class="mt-4 text-base/6 text-gray-600 pr-4">{member.body}</p>
             </div>
+            <a
+              href={`/flight-crew/${member.slug}`}
+              class="absolute top-0 w-full h-full"
+            />
           </li>
         ))
       }

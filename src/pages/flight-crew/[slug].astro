@@ -47,26 +47,24 @@ const authorPosts = allPosts
   siteDescription={`This is a profile page for ${member.data.name}.  Right Rudder Marketing is a growing company that relies on the contributions of friends, family, partners, and an awesome hard working crew.  We are all passionate about the flight training business and our aim is to affect the aviation industry by training more safe and proficient pilots.`}
   keywords={`${member.data.name}, team member, crew, CRM, crew resource management, teamwork, teamwork makes the dream work, all stars, developers, marketers, designers, copywriters, video-editors, full stack engineers, pilots, aviation consultant, aviation specialist, training, CFI, instructor`}
 >
-  <div class="bg-primary-800 h-28 w-full"></div>
-  <section class="relative py-16">
-    <div class="container mx-auto px-4">
+  <div class="bg-blackpearl-950 h-28 w-full"></div>
+  <section class="relative bg-gray-100">
+    <div class="container mx-auto">
       <div
         class="relative flex flex-col min-w-0 max-w-4xl mx-auto wrap-break-word bg-white w-full mb-6 shadow-xl rounded-lg"
       >
-        <div class="px-6">
-          <div class="mt-12 flex flex-wrap justify-center">
-            <div class="w-full lg:w-1/2 px-4 lg:order-2 flex justify-center">
-              <div class="relative rounded-xl overflow-hidden">
-                <img
-                  src={member.data.image}
-                  alt={member.data.name}
-                  class="object-cover bg-black"
-                />
-              </div>
+        <div class="px-0">
+          <div class="mt-6 flex flex-wrap justify-center">
+            <div class="w-full px-4 lg:order-2 flex justify-center">
+              <img
+                src={member.data.image}
+                alt={member.data.name}
+                class="object-cover w-full h-full bg-black"
+              />
             </div>
           </div>
-          <div class="text-center mt-6">
-            <h1 class="text-5xl font-semibold leading-normal text-gray-700">
+          <div class="text-center mt-24">
+            <h1 class="title">
               {member.data.name}
             </h1>
             <div
@@ -77,34 +75,19 @@ const authorPosts = allPosts
             <div class="hidden" aria-hidden="true">
               Seniority: {member.data.seniority}
             </div>
-            <div class="mb-2 text-gray-600 mt-10">
-              Status: <br />{
-                member.data.status === "active" && (
-                  <strong class="text-primary-600">
-                    Active RRM Crew Member
-                  </strong>
-                )
-              }
-              {
-                member.data.status === "former" && (
-                  <strong class="text-gray-400">Former RRM Crew Member</strong>
-                )
-              }
-              {
-                member.data.status === "external" && (
-                  <strong class="text-gray-800">Guest Contributor</strong>
-                )
-              }
-            </div>
           </div>
           <div class="text-center">
             <div
               class="mt-4 flex flex-wrap justify-center py-10 border-b border-gray-200"
             >
               <div class="w-full lg:w-9/12 px-4">
-                <h3 class="font-bold text-2xl capitalize">
-                  Connect with {member.data.name}
-                </h3>
+                {
+                  member.data.social && (
+                    <h3 class="font-bold text-2xl capitalize">
+                      Connect with {member.data.name}
+                    </h3>
+                  )
+                }
                 <div class="mt-2 flex justify-center align-middle gap-1">
                   {
                     member.data.social?.facebook && (
