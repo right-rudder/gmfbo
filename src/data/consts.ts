@@ -1,14 +1,13 @@
 // CHANGE Default title
-export const SITE_TITLE =
-  "Right Rudder Marketing | Flight School Digital Marketing Agency";
+export const SITE_TITLE = "Grow My FBO | FBO Marketing Agency";
 
 // CHANGE default meta description
 export const SITE_DESCRIPTION =
-  "Right Rudder Marketing is the #1 digital marketing agency for flight schools. We help flight schools 2-3X student enrollment through proven SEO, ads, website optimization, and lead nurturing. Built by pilots, for flight schools.";
+  "Grow My FBO is the #1 digital marketing agency for FBOs. We help FBOs 2-3X student enrollment through proven SEO, ads, website optimization, and lead nurturing. Built by pilots, for FBOs.";
 
 // SEO tip -> keyword + city 1
 export const KEYWORDS = [
-  "Right Rudder Marketing Aviation Academy",
+  "Grow My FBO Aviation Academy",
   "multi-engine rating",
   "flight school North Carolina",
   "multi-engine training",
@@ -35,7 +34,7 @@ export const PRIMARY_KEYWORDS = {
   informational:
     "how to become airline pilot, multi-engine rating requirements, instrument rating training, commercial pilot license requirements, flight instructor certification",
   navigational:
-    "Right Rudder Marketing Aviation Academy, Wayne Executive Jetport training, Right Rudder Marketing flight school North Carolina, Right Rudder Marketing aviation",
+    "Grow My FBO Aviation Academy, Wayne Executive Jetport training, Grow My FBO flight school North Carolina, Grow My FBO aviation",
   commercial:
     "best multi-engine flight school, professional pilot training, airline preparation course, zero to airlines program, CFI instructor training",
   transactional:
@@ -76,14 +75,14 @@ export const LOGO_ASSETS_4 = "/GMFBO-simple-red.png";
 export const LOGO_ASSETS_5 = "/GMFBO-simple-white.png";
 
 // CHANGE client business info
-export const COMPANY_NAME = "Right Rudder Marketing";
-export const COMPANY_NAME_CAPS = "RIGHT RUDDER MARKETING";
+export const COMPANY_NAME = "Grow My FBO";
+export const COMPANY_NAME_CAPS = "Grow My FBO";
 export const COMPANY_NICKNAME = "RRM";
 export const LOGO_PRIMARY = "/GMFBO-full-colors.png";
 export const LOGO_SECONDARY = "/GMFBO-full-white.png";
 export const PHONE_NUMBER = "469-224-9672";
 export const PHONE_NUMBER_HEADER = "(919) 526-4287";
-export const EMAIL_ADDRESS = "contact@rightruddermarketing.com";
+export const EMAIL_ADDRESS = "info@growmyfbo.com";
 export const FACEBOOK_URL = "https://www.facebook.com/mil2ATP";
 export const INSTAGRAM_URL = "https://www.instagram.com/mil2ATP";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/mil2atp-inc.";
@@ -104,42 +103,5 @@ export const LOCATIONS = [
     forwardPhone: "(919) 526-4287",
     fullAddress: "278 Aviation Rd. Pikeville, NC 27863",
     fullAddressLineBreak: "278 Aviation Rd.\nPikeville, NC 27863",
-  },
-];
-
-export const COURSES = [
-  "ATP Certification Training",
-  "CTP Certification Training",
-  "Rotorcraft Transition Program (RTP)",
-  "General Flight Training",
-  "DoD SkillBridge",
-  "Private Pilot License (PPL)",
-  "Instrument Rating (IR)",
-];
-
-export const OTHER_COURSES = [
-  "Airline Interview Preparation",
-  "Resume Review",
-  "Application Review",
-];
-
-export const FLEET = [
-  {
-    title: "Cessna 172",
-    path: "",
-  },
-];
-
-export const VIDEOS = [
-  {
-    upperHeading: "Vegas Aviation",
-    title: "Vegas Aviation TopHawk",
-    description: "Vegas Aviation TopHawk video.",
-    link: "https://www.youtube.com/watch?v=An5Yyhl7RBE",
-    image: {
-      src: "",
-      alt: "Vegas Aviation TopHawk Video Thumbnail",
-      classes: "",
-    },
   },
 ];

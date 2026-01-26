@@ -157,7 +157,7 @@ export default function NavbarFlyout() {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/contact" className="btn-primary">
+          <a href="/#contact" className="btn-primary">
             Contact Us
           </a>
         </div>
@@ -170,12 +170,12 @@ export default function NavbarFlyout() {
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Grow My FBO</span>
               <img
-                alt="Right Rudder Marketing Logo"
-                src="/RRM-R-symbol-474.webp"
-                className="h-8 w-auto"
+                alt="Grow My FBO Logo"
+                src="/GMFBO-full-white.png"
+                className="h-12 w-auto"
               />
             </a>
             <button
@@ -187,53 +187,32 @@ export default function NavbarFlyout() {
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
+          <div className="mt-12 flow-root">
             <div className="-my-6 divide-y divide-white/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="/marketing-system"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-light text-white hover:bg-white/5"
+                  href="/#marketing-system"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium text-white hover:bg-white/5"
                 >
-                  Our System
+                  Our Marketing System
                 </a>
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5">
-                    Resources
-                    <ChevronDownIcon
-                      aria-hidden="true"
-                      className="size-5 flex-none group-data-open:rotate-180"
-                    />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...resources, ...callsToActionResources].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
                 <a
                   href="/blog"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-light text-white hover:bg-white/5"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium text-white hover:bg-white/5"
                 >
-                  Blog
+                  Our Blog
                 </a>
                 <a
-                  href="/about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-light text-white hover:bg-white/5"
+                  href="/#meet-the-team"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium text-white hover:bg-white/5"
                 >
-                  About Us
+                  Our Team
                 </a>
               </div>
               <div className="py-6">
                 <a
-                  href="/contact"
-                  className="btn-primary -mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-light text-white hover:bg-white/5"
+                  href="/#contact"
+                  className="btn-primary -mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-medium text-white hover:bg-white/5"
                 >
                   Contact Us
                 </a>

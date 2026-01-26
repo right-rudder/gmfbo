@@ -20,26 +20,26 @@ const sortedTeam = fullTeam.sort(
     </div>
     <ul
       role="list"
-      class="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+      class="mx-auto mt-14 flex flex-wrap justify-center gap-12 max-w-2xl lg:max-w-4xl xl:max-w-none"
     >
       {
         sortedTeam.map((member) => (
-          <li class="flex flex-col gap-6 overflow-hidden rounded-tl-4xl rounded-br-4xl hover:rotate-z-1 hover:shadow-2xl xl:flex-row group hover:ring-1 ring-gray-200 hover:scale-105 transition-all duration-200 ease-out">
+          <li class="flex flex-col lg:justify-start lg:items-center group gap-6 w-full lg:w-[45%] lg:h-108 lg:max-w-52 lg:hover:max-w-[50%] overflow-hidden rounded-tl-4xl rounded-br-4xl hover:rotate-z-1 hover:shadow-2xl xl:flex-row group hover:ring-1 ring-gray-200 hover:scale-105 transition-all duration-200 ease-in-out">
             <ImageComp
               src={
                 member.data.image || "/src/assets/crew-placeholder-male.webp"
               }
               alt={member.data.name}
-              class="aspect-square w-full md:aspect-4/5 md:w-52 flex-none object-cover outline-1 -outline-offset-1 outline-black/5"
+              class="aspect-square w-full lg:h-full lg:aspect-4/5 lg:w-52 flex-none object-cover outline-1 -outline-offset-1 outline-black/5"
             />
-            <div class="flex-auto py-4">
+            <div class="flex-auto py-10 px-8 lg:pl-8 lg:pr-10 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-700 ease-in">
               <h3 class="text-2xl font-bold tracking-tight text-gray-900">
                 {member.data.name}
               </h3>
-              <p class="text-base/7 font-medium text-gray-500">
+              <p class="lg:text-sm text-base/7 font-medium text-gray-500">
                 {member.data.title}
               </p>
-              <p class="mt-4 text-base/7 text-gray-600 pr-4">{member.body}</p>
+              <p class="mt-4 text-base/6 text-gray-600 pr-4">{member.body}</p>
             </div>
           </li>
         ))
