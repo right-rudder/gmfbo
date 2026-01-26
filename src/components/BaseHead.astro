@@ -68,61 +68,77 @@ const {
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FlightSchool",
-    "name": "MIL2ATP",
-    "alternateName": "M2A",
-    "url": "https://mil2atp.com/",
-    "description": "M2A is an award-winning flight school that offers specialized courses for both beginner pilots and military aviators transitioning to civilian aviation. Our highly trained instructors bring extensive experience, ensuring you receive exceptional training tailored to your needs. We offer ATP-CTP certification, ATP flight training, rotorcraft transition programs, and airline hiring preparation.",
-    "telephone": "+1 (919) 526-4287",
-    "email": "contact@mil2atp.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "278 Aviation Rd.",
-      "addressLocality": "Pikeville",
-      "addressRegion": "NC",
-      "postalCode": "27863",
-      "addressCountry": "US"
-    },
-    "currenciesAccepted": "USD",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 35.4929,
-      "longitude": -77.9834
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "08:00",
-        "closes": "20:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/mil2ATP",
-      "https://twitter.com/mil2atp",
-      "https://www.instagram.com/mil2ATP",
-      "https://www.linkedin.com/company/mil2atp-inc."
-    ],
+    "@type": "ProfessionalService",
+    "name": "Grow My FBO",
+    "alternateName": "GMFBO",
+    "url": "https://growmyfbo.com/",
+    "description": "Grow My FBO is the premier digital marketing agency for Fixed-Base Operators. We specialize in helping FBOs grow their business through proven SEO, targeted advertising, website optimization, lead generation, and reputation management. Built by aviation professionals, for aviation businesses.",
+    "telephone": "+1-469-224-9672",
+    "email": "info@growmyfbo.com",
+    "priceRange": "$$",
     "areaServed": {
       "@type": "Place",
-      "name": ["Pikeville, NC", "Goldsboro, NC", "Wayne County, NC"]
+      "name": "United States"
     },
-    "makesOffer": {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "serviceType": "ATP Certification and Military Transition Training"
-      },
-      "priceCurrency": "USD",
-      "price": "Varies"
+    "sameAs": [
+      "https://www.facebook.com/rightruddermarketing",
+      "https://www.instagram.com/rightruddermarketing",
+      "https://www.linkedin.com/company/right-rudder-marketing",
+      "https://twitter.com/rightrudder"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "FBO Marketing Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "FBO Website Design & Development",
+            "description": "Custom website design and development optimized for Fixed-Base Operators"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Aviation SEO Services",
+            "description": "Search engine optimization specifically for FBOs to rank higher in local search results"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "FBO Digital Advertising",
+            "description": "Targeted advertising campaigns on Google Ads, Facebook, Instagram, and YouTube"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Lead Generation & CRM",
+            "description": "Lead nurturing systems and customer relationship management for FBOs"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Aviation Content Marketing",
+            "description": "Video marketing, blog content, and social media management for aviation businesses"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reputation Management",
+            "description": "Online reputation management and review generation for FBOs"
+          }
+        }
+      ]
     }
   }
 </script>
@@ -132,11 +148,7 @@ const {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
-<meta name="author" content="MIL2ATP" />
-<meta name="geo.region" content="US-NC" />
-<meta name="geo.placename" content="Pikeville" />
-<meta name="geo.position" content="35.4929;-77.9834" />
-<meta name="ICBM" content="35.4929, -77.9834" />
+<meta name="author" content="Grow My FBO" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -145,7 +157,7 @@ const {
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
 <meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="MIL2ATP" />
+<meta property="og:site_name" content="Grow My FBO" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />

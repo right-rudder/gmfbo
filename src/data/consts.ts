@@ -1,67 +1,68 @@
 // CHANGE Default title
-export const SITE_TITLE = "Grow My FBO | FBO Marketing Agency";
+export const SITE_TITLE =
+  "Grow My FBO | #1 FBO Marketing Agency for Fixed-Base Operators";
 
 // CHANGE default meta description
 export const SITE_DESCRIPTION =
-  "Grow My FBO is the #1 digital marketing agency for FBOs. We help FBOs 2-3X student enrollment through proven SEO, ads, website optimization, and lead nurturing. Built by pilots, for FBOs.";
+  "Grow My FBO is the #1 digital marketing agency for Fixed-Base Operators. We help FBOs increase revenue 2-3X through proven SEO, targeted advertising, website optimization, and lead generation. Built by pilots, for aviation businesses.";
 
-// SEO tip -> keyword + city 1
+// SEO tip -> keyword + service focus
 export const KEYWORDS = [
-  "Grow My FBO Aviation Academy",
-  "multi-engine rating",
-  "flight school North Carolina",
-  "multi-engine training",
-  "instrument rating training",
-  "commercial pilot license",
-  "private pilot training",
-  "CFI flight instructor",
-  "CFII MEI training",
-  "airline pilot training",
-  "professional pilot program",
-  "zero to airlines",
-  "flight training Wayne Executive Jetport",
-  "North Carolina flight school",
-  "multi-engine instructor",
-  "time building program",
-  "airline interview preparation",
-  "career pilot training",
-  "transparent flight training pricing",
-  "all-inclusive flight training",
+  "FBO marketing agency",
+  "fixed base operator marketing",
+  "FBO digital marketing",
+  "aviation marketing services",
+  "FBO website design",
+  "FBO SEO services",
+  "FBO lead generation",
+  "aviation business growth",
+  "FBO advertising campaigns",
+  "pilot marketing",
+  "aviation customer acquisition",
+  "FBO revenue growth",
+  "fixed base operator advertising",
+  "aviation marketing experts",
+  "FBO social media marketing",
+  "aviation content marketing",
+  "FBO reputation management",
+  "aviation video marketing",
+  "FBO conversion optimization",
+  "aviation marketing system",
 ].join(", ");
 
 // Primary keywords by search intent
 export const PRIMARY_KEYWORDS = {
   informational:
-    "how to become airline pilot, multi-engine rating requirements, instrument rating training, commercial pilot license requirements, flight instructor certification",
+    "how to market an FBO, FBO marketing strategies, how to grow FBO business, aviation marketing best practices, FBO customer acquisition",
   navigational:
-    "Grow My FBO Aviation Academy, Wayne Executive Jetport training, Grow My FBO flight school North Carolina, Grow My FBO aviation",
+    "Grow My FBO, FBO marketing agency, fixed base operator marketing company, aviation marketing services",
   commercial:
-    "best multi-engine flight school, professional pilot training, airline preparation course, zero to airlines program, CFI instructor training",
+    "best FBO marketing agency, top aviation marketing company, FBO digital marketing services, aviation marketing specialists",
   transactional:
-    "enroll in multi-engine training, sign up for instrument rating, book flight training, schedule discovery flight, become flight instructor",
+    "hire FBO marketing agency, FBO marketing consultation, aviation marketing services pricing, get FBO marketing help",
 };
 
-// Secondary keywords by program type
-export const PROGRAM_KEYWORDS = {
-  multiEngine:
-    "multi-engine rating, multi-engine training, twin engine certification, Piper Seminole training, multi-engine time building",
-  instrumentRating:
-    "instrument rating training, IFR certification, instrument flight training, actual IMC flying, CFII training",
-  privatePilot:
-    "private pilot license, PPL training, learn to fly, discovery flight, beginner pilot training, zero flight hours",
-  commercialPilot:
-    "commercial pilot license, CPL training, professional pilot certification, complex aircraft training, career pilot",
-  flightInstructor:
-    "CFI certification, flight instructor training, CFII MEI training, build flight hours, instructor employment",
-  careerPrograms:
-    "zero to airlines program, airline pilot training, career pathway, professional pilot program, airline placement",
+// Secondary keywords by service type
+export const SERVICE_KEYWORDS = {
+  websiteDesign:
+    "FBO website design, aviation website development, FBO web design, fixed base operator website, mobile FBO website",
+  seo: "FBO SEO, aviation search engine optimization, FBO local SEO, rank FBO on Google, aviation organic search",
+  advertising:
+    "FBO advertising, aviation PPC, FBO Google Ads, aviation Facebook ads, FBO targeted advertising",
+  contentMarketing:
+    "aviation content marketing, FBO blog writing, aviation video marketing, FBO social media content",
+  leadGeneration:
+    "FBO lead generation, aviation customer acquisition, FBO conversion optimization, pilot lead nurturing",
+  reputationManagement:
+    "FBO reputation management, aviation online reviews, FBO Google reviews, aviation testimonials",
 };
 
-// Location-focused keywords
-export const LOCATION_KEYWORDS = {
-  primary: "Wayne Executive Jetport flight training, Pikeville NC aviation",
+// Target audience keywords
+export const AUDIENCE_KEYWORDS = {
+  primary:
+    "FBO marketing, fixed base operator advertising, aviation business growth",
   secondary:
-    "North Carolina flight school, military pilot training NC, aviation training Eastern NC, Goldsboro area flight school",
+    "pilot services marketing, aircraft fueling marketing, hangar rental advertising, aviation maintenance marketing",
 };
 
 export const OG_IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
@@ -76,32 +77,33 @@ export const LOGO_ASSETS_5 = "/GMFBO-simple-white.png";
 
 // CHANGE client business info
 export const COMPANY_NAME = "Grow My FBO";
-export const COMPANY_NAME_CAPS = "Grow My FBO";
-export const COMPANY_NICKNAME = "RRM";
+export const COMPANY_NAME_CAPS = "GROW MY FBO";
+export const COMPANY_NICKNAME = "GMFBO";
 export const LOGO_PRIMARY = "/GMFBO-full-colors.png";
 export const LOGO_SECONDARY = "/GMFBO-full-white.png";
 export const PHONE_NUMBER = "469-224-9672";
-export const PHONE_NUMBER_HEADER = "(919) 526-4287";
+export const PHONE_NUMBER_HEADER = "469-224-9672";
 export const EMAIL_ADDRESS = "info@growmyfbo.com";
-export const FACEBOOK_URL = "https://www.facebook.com/mil2ATP";
-export const INSTAGRAM_URL = "https://www.instagram.com/mil2ATP";
-export const LINKEDIN_URL = "https://www.linkedin.com/company/mil2atp-inc.";
-export const X_URL = "https://twitter.com/mil2atp";
-export const YOUTUBE_URL = "";
+export const FACEBOOK_URL = "https://www.facebook.com/rightruddermarketing";
+export const INSTAGRAM_URL = "https://www.instagram.com/rightruddermarketing";
+export const LINKEDIN_URL =
+  "https://www.linkedin.com/company/right-rudder-marketing";
+export const X_URL = "https://twitter.com/rightrudder";
+export const YOUTUBE_URL = "https://www.youtube.com/@rightruddermarketing";
 export const YELP_URL = "";
 export const GITHUB_URL = "";
 
 export const LOCATIONS = [
   {
-    title: "Wayne Executive Jetport",
-    address: "278 Aviation Rd.",
-    city: "Pikeville",
-    state: "NC",
-    zip: "27863",
-    gMaps: "https://maps.app.goo.gl/MIL2ATP",
-    phone: "(919) 526-4287",
-    forwardPhone: "(919) 526-4287",
-    fullAddress: "278 Aviation Rd. Pikeville, NC 27863",
-    fullAddressLineBreak: "278 Aviation Rd.\nPikeville, NC 27863",
+    title: "Right Rudder Marketing Headquarters",
+    address: "Online Marketing Agency",
+    city: "Nationwide",
+    state: "US",
+    zip: "",
+    gMaps: "",
+    phone: "469-224-9672",
+    forwardPhone: "469-224-9672",
+    fullAddress: "Serving FBOs Nationwide",
+    fullAddressLineBreak: "Serving FBOs\nNationwide",
   },
 ];

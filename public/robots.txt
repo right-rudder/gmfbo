@@ -10,6 +10,9 @@ Disallow: /*?*utm_source=
 Disallow: /*?*utm_medium=
 Disallow: /*?*utm_campaign=
 
+# Sitemap location
+Sitemap: https://growmyfbo.com/sitemap-index.xml
+
 # Allow important crawlers full access
 User-agent: Googlebot
 Allow: /

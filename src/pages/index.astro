@@ -13,6 +13,15 @@ import MeetTheTeam from "@/components/MeetTheTeam.astro";
 import { PHONE_NUMBER } from "../data/consts.ts";
 import ContactUs from "@/components/ContactUs.astro";
 
+// SEO Meta Data
+const seoData = {
+  siteTitle: "FBO Marketing Agency | Grow Your Fixed-Base Operator Business",
+  siteDescription:
+    "Grow My FBO is the #1 digital marketing agency for Fixed-Base Operators. We help FBOs increase revenue through proven SEO, targeted advertising, website optimization, and lead generation. Built by pilots, for aviation businesses.",
+  siteKeywords:
+    "FBO marketing agency, fixed base operator marketing, FBO digital marketing, aviation marketing services, FBO website design, FBO SEO, FBO lead generation, aviation business growth, FBO advertising",
+};
+
 const heroData = {
   image: {
     src: "/src/assets/angry-_-kat-5R4fBlHEegc-unsplash.jpg",
@@ -174,7 +183,11 @@ const features = {
 };
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle={seoData.siteTitle}
+  siteDescription={seoData.siteDescription}
+  siteKeywords={seoData.siteKeywords}
+>
   <HeroScreen data={heroData} />
   <PartnerWithUs />
   <section

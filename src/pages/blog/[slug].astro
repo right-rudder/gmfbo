@@ -37,10 +37,18 @@ const relatedPosts = post.data.tags
 ---
 
 <BlogLayout
-  siteTitle={`${post.data.title} | Right Rudder Marketing Aviation Academy Blog`}
+  siteTitle={`${post.data.title} | Grow My FBO Aviation Marketing Blog`}
   siteDescription={post.data.description}
   siteImage={post.data.heroImage}
   author={post.data.author}
+  articleData={{
+    title: post.data.title,
+    description: post.data.description,
+    image: post.data.heroImage,
+    pubDate: post.data.pubDate.toISOString(),
+    updatedDate: post.data.updatedDate?.toISOString(),
+    author: post.data.author,
+  }}
 >
 <section
   class="hero-section relative overflow-hidden flex justify-center items-center lg:items-center text-white min-h-screen md:min-h-[95vh] lg:min-h-[90vh] xl:min-h-[85vh] 2xl:min-h-[80vh]"

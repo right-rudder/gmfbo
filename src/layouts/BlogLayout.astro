@@ -11,7 +11,7 @@ import FromTheBlog from "../components/FromTheBlog.astro";
 
 
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, siteImage, siteKeywords, customBreadcrumbs, author = false } = Astro.props;
+const { siteTitle, siteDescription, siteImage, siteKeywords, customBreadcrumbs, author = false, articleData } = Astro.props;
 
 // Generate breadcrumbs based on URL path
 function generateBreadcrumbs(pathname: string, customBreadcrumbs?: Array<{name: string, url: string}>) {
@@ -90,6 +90,36 @@ const breadcrumbs = generateBreadcrumbs(pathname, customBreadcrumbs);
           "name": crumb.name,
           "item": new URL(crumb.url, Astro.site).toString()
         }))
+      })}>
+      </script>
+    )}
+    
+    <!-- Article Schema Markup -->
+    {articleData && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": articleData.title,
+        "description": articleData.description,
+        "image": articleData.image ? new URL(articleData.image, Astro.site).toString() : undefined,
+        "datePublished": articleData.pubDate,
+        "dateModified": articleData.updatedDate || articleData.pubDate,
+        "author": {
+          "@type": "Person",
+          "name": articleData.author || "Grow My FBO Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Grow My FBO",
+          "logo": {
+            "@type": "ImageObject",
+            "url": new URL("/GMFBO-full-colors.png", Astro.site).toString()
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": Astro.url.toString()
+        }
       })}>
       </script>
     )}
