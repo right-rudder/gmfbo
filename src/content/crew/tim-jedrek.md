@@ -1,7 +1,7 @@
 ---
 name: Tim Jedrek
 slug: tim-jedrek
-title: Founder
+title: Co-Founder & COO
 social:
   facebook: "https://www.facebook.com/flightschoolmarketing"
   instagram: "https://www.instagram.com/rightruddermarketing/"
@@ -12,7 +12,7 @@ social:
   youtube: "https://www.youtube.com/@rightruddermarketing"
 image: /src/assets/RRM-Crew-Tim-Jedrek.webp
 status: active
-seniority: 1
+seniority: 2
 ---
 
-Tim Jedrek is a passionate aviator, author, entrepreneur, and digital marketing expert dedicated to helping flight schools grow and scale their aviation businesses. As the founder of Right Rudder Marketing, Tim combines his love for aviation with years of experience in business strategy and software development.
+Tim Jedrek is a passionate aviator, author, entrepreneur, and digital marketing expert dedicated to helping flight schools grow and scale their aviation businesses. Tim combines his love for aviation with years of experience in business strategy and software development.
