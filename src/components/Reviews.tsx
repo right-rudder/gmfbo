@@ -20,7 +20,7 @@ const reviews: Array<Review> = [
   },
   {
     title: "Completely transformed our website",
-    body: "At Red Arrow Flight Academy, we have had an exceptional experience working with Right Rudder Marketing. They completely transformed our website, enhancing its usability and enriching it with valuable content that effectively helps us attract new students.",
+    body: "At Red Arrow Flight Academy, we have had an exceptional experience working with Right Rudder Marketing. They completely transformed our website, enhancing its usability and enriching it with valuable content that effectively helps us attract new customers.",
     author: "Red Arrow Flight Academy",
     rating: 5,
   },
@@ -44,7 +44,7 @@ const reviews: Array<Review> = [
   },
   {
     title: "Helped our flight school grow",
-    body: "They helped our flight school grow. They worked with us to revamp our website, launch a profitable google ads campaign, implemented CRM and automation. We're signing up new students and getting a bunch of leads.",
+    body: "They helped our flight school grow. They worked with us to revamp our website, launch a profitable google ads campaign, implemented CRM and automation. We're signing up new customers and getting a bunch of leads.",
     author: "Aero Academy",
     rating: 5,
   },
