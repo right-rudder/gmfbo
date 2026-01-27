@@ -9,7 +9,7 @@ const sortedTeam = fullTeam.sort(
 );
 ---
 
-<div id="meet-the-team" class="bg-white py-24 sm:py-32">
+<section id="meet-the-team" class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl sm:text-center">
       <h2 class="title text-center text-crimson-600">Meet our leadership</h2>
@@ -20,7 +20,7 @@ const sortedTeam = fullTeam.sort(
     </div>
     <ul
       role="list"
-      class="mx-auto mt-14 flex flex-wrap justify-center gap-12 max-w-2xl lg:max-w-4xl xl:max-w-none"
+      class="mx-auto relative mt-14 flex flex-wrap justify-center gap-12 max-w-2xl lg:max-w-4xl xl:max-w-none"
     >
       {
         sortedTeam.map((member) => (
@@ -48,4 +48,4 @@ const sortedTeam = fullTeam.sort(
       }
     </ul>
   </div>
-</div>
+</section>
