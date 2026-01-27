@@ -1,7 +1,7 @@
 ---
 name: Sam Settle
 slug: sam-settle
-title: Co-Founder & Chief Operating Officer
+title: Co-Founder & CEO
 social:
   linkedin: "https://www.linkedin.com/in/samsettletx/"
   instagram: "https://www.instagram.com/ssizzle/?hl=en"
