@@ -65,7 +65,7 @@ export const AUDIENCE_KEYWORDS = {
     "pilot services marketing, aircraft fueling marketing, hangar rental advertising, aviation maintenance marketing",
 };
 
-export const OG_IMAGE = "/Right-Rudder-Marketing-Train-More-Pilots.png";
+export const OG_IMAGE = "/grow-my-fbo-marketing-og.png";
 
 export const FAVICON = "/GMFBO-favicon.png";
 
@@ -84,10 +84,10 @@ export const LOGO_SECONDARY = "/GMFBO-full-white.png";
 export const PHONE_NUMBER = "469-224-9672";
 export const PHONE_NUMBER_HEADER = "469-224-9672";
 export const EMAIL_ADDRESS = "info@growmyfbo.com";
-export const FACEBOOK_URL = "https://www.facebook.com/rightruddermarketing";
-export const INSTAGRAM_URL = "https://www.instagram.com/rightruddermarketing";
+export const FACEBOOK_URL = "https://www.facebook.com/GrowMyFBO";
+export const INSTAGRAM_URL = "https://www.instagram.com/growmyfbo/";
 export const LINKEDIN_URL =
-  "https://www.linkedin.com/company/right-rudder-marketing";
+  "https://www.linkedin.com/company/growmyfbo/";
 export const X_URL = "https://twitter.com/rightrudder";
 export const YOUTUBE_URL = "https://www.youtube.com/@rightruddermarketing";
 export const YELP_URL = "";
@@ -95,7 +95,7 @@ export const GITHUB_URL = "";
 
 export const LOCATIONS = [
   {
-    title: "Right Rudder Marketing Headquarters",
+    title: "Grow My FBO Headquarters",
     address: "Online Marketing Agency",
     city: "Nationwide",
     state: "US",
